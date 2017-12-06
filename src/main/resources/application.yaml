@@ -1,0 +1,23 @@
+# Common
+spring.application.name: actuator-selector-issue
+
+server.port: 8080
+
+# Management
+management.server.port: 8081
+management.server.address: 0.0.0.0
+management.server.context-path: /
+
+# Management endpoints
+management.endpoints.web.base-path: /
+management.endpoints.enabled-by-default: true
+management.endpoints.web.expose:
+  - health
+  - info
+  - env
+  - mycache
+
+management.endpoint.health.enabled: true
+management.endpoint.info.enabled: true
+management.endpoint.mycache.enabled: true
+management.endpoint.env.enabled: true
